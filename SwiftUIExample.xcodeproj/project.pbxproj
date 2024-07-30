@@ -13,6 +13,7 @@
 		483C6EDF2C5893B20062C4A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483C6EDE2C5893B20062C4A9 /* Preview Assets.xcassets */; };
 		483C6EE12C5893B20062C4A9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C6EE02C5893B20062C4A9 /* Persistence.swift */; };
 		483C6EE42C5893B20062C4A9 /* SwiftUIExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 483C6EE22C5893B20062C4A9 /* SwiftUIExample.xcdatamodeld */; };
+		483C6EED2C58941C0062C4A9 /* ListOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C6EEC2C58941C0062C4A9 /* ListOrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		483C6EDE2C5893B20062C4A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		483C6EE02C5893B20062C4A9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		483C6EE32C5893B20062C4A9 /* SwiftUIExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIExample.xcdatamodel; sourceTree = "<group>"; };
+		483C6EEC2C58941C0062C4A9 /* ListOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		483C6ED62C5893B00062C4A9 /* SwiftUIExample */ = {
 			isa = PBXGroup;
 			children = (
+				483C6EEA2C5893FD0062C4A9 /* example */,
 				483C6ED72C5893B00062C4A9 /* SwiftUIExampleApp.swift */,
 				483C6ED92C5893B00062C4A9 /* ContentView.swift */,
 				483C6EDB2C5893B20062C4A9 /* Assets.xcassets */,
@@ -71,6 +74,22 @@
 				483C6EDE2C5893B20062C4A9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		483C6EEA2C5893FD0062C4A9 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				483C6EEB2C5894070062C4A9 /* listorder */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		483C6EEB2C5894070062C4A9 /* listorder */ = {
+			isa = PBXGroup;
+			children = (
+				483C6EEC2C58941C0062C4A9 /* ListOrderView.swift */,
+			);
+			path = listorder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,11 +129,12 @@
 			};
 			buildConfigurationList = 483C6ECF2C5893AF0062C4A9 /* Build configuration list for PBXProject "SwiftUIExample" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 483C6ECB2C5893AF0062C4A9;
 			productRefGroup = 483C6ED52C5893B00062C4A9 /* Products */;
@@ -143,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				483C6EED2C58941C0062C4A9 /* ListOrderView.swift in Sources */,
 				483C6EE12C5893B20062C4A9 /* Persistence.swift in Sources */,
 				483C6EDA2C5893B00062C4A9 /* ContentView.swift in Sources */,
 				483C6EE42C5893B20062C4A9 /* SwiftUIExample.xcdatamodeld in Sources */,
@@ -205,7 +226,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -262,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -288,6 +309,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,9 +317,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = king.sky.SwiftUIExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,6 +343,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,9 +351,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = king.sky.SwiftUIExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
