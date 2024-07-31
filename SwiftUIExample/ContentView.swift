@@ -24,6 +24,15 @@ struct ContentView: View {
                         
                 }
                 
+                NavigationLink(destination: ShareExampleView()) {
+                        Text("分享图片")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color(.systemGray5))
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        
+                }
+                
             }
             .foregroundStyle(.primary)
             .padding()
