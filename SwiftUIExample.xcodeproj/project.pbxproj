@@ -15,6 +15,7 @@
 		483C6EE12C5893B20062C4A9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C6EE02C5893B20062C4A9 /* Persistence.swift */; };
 		483C6EE42C5893B20062C4A9 /* SwiftUIExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 483C6EE22C5893B20062C4A9 /* SwiftUIExample.xcdatamodeld */; };
 		483C6EED2C58941C0062C4A9 /* ListOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C6EEC2C58941C0062C4A9 /* ListOrderView.swift */; };
+		4895A98C2C5B158C00A09F6D /* Shape01View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4895A98B2C5B158C00A09F6D /* Shape01View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		483C6EE02C5893B20062C4A9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		483C6EE32C5893B20062C4A9 /* SwiftUIExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIExample.xcdatamodel; sourceTree = "<group>"; };
 		483C6EEC2C58941C0062C4A9 /* ListOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrderView.swift; sourceTree = "<group>"; };
+		4895A98B2C5B158C00A09F6D /* Shape01View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape01View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		483C6EEA2C5893FD0062C4A9 /* example */ = {
 			isa = PBXGroup;
 			children = (
+				4895A98A2C5B157B00A09F6D /* shape */,
 				4804F3C52C59C6FC00809897 /* share */,
 				483C6EEB2C5894070062C4A9 /* listorder */,
 			);
@@ -101,6 +104,14 @@
 				483C6EEC2C58941C0062C4A9 /* ListOrderView.swift */,
 			);
 			path = listorder;
+			sourceTree = "<group>";
+		};
+		4895A98A2C5B157B00A09F6D /* shape */ = {
+			isa = PBXGroup;
+			children = (
+				4895A98B2C5B158C00A09F6D /* Shape01View.swift */,
+			);
+			path = shape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			files = (
 				483C6EED2C58941C0062C4A9 /* ListOrderView.swift in Sources */,
 				483C6EE12C5893B20062C4A9 /* Persistence.swift in Sources */,
+				4895A98C2C5B158C00A09F6D /* Shape01View.swift in Sources */,
 				483C6EDA2C5893B00062C4A9 /* ContentView.swift in Sources */,
 				4804F3C72C59C77A00809897 /* ShareExampleView.swift in Sources */,
 				483C6EE42C5893B20062C4A9 /* SwiftUIExample.xcdatamodeld in Sources */,

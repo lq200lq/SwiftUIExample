@@ -33,6 +33,15 @@ struct ContentView: View {
                         
                 }
                 
+                NavigationLink(destination: Shape01View()) {
+                        Text("自定义Shape")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color(.systemGray5))
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        
+                }
+                
             }
             .foregroundStyle(.primary)
             .padding()
